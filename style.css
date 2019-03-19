@@ -1,0 +1,148 @@
+@media screen and (max-width: 1920px) {
+  .bloc {
+    /*display:block;
+    clear:both; */
+    
+  }
+        #menu, #informatique, #commun, #certifications, #hobby, #description, #experiences, #diplomes, #menu_foot .flex_menu, #centre, #lang {
+        list-style-type: none;
+}
+
+.bloc {
+    background-color:white;
+    width: 80%;
+    margin: auto;
+    padding-top: 95px;
+    border-bottom-right-radius: 24px;
+    border-bottom-left-radius: 24px;
+    border: 2px solid white;
+    box-shadow: -8px -8px 10px #584 ;
+    font-family: serif, cursive, sans-serif;
+    position: relative;
+}
+
+#font {    
+background-color: cadetblue;
+
+}
+
+#fond_banniere {
+        width: 100%;        
+    }
+    
+#menu_bas {
+  list-style-type: none;
+  margin: 10;
+  padding: 10;
+  background-color: darkslategrey;
+  bottom: 9;
+  width: 100%;
+    }
+    
+#menu_haut {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: darkslategrey;
+  position: fixed;
+  display: flex;
+  top: 0;
+  width: 100%;
+    }
+nav > ul > li {
+      float:left;
+      text-decoration: none; color: white;
+    position: relative;
+     display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav >ul >li:hover {
+  background-color: #111;
+}
+  
+#name {
+    text-align: center;
+}
+
+#cadre1 {
+    border: none;
+    width : 100%;
+    display: inline-block;
+    text-align: center;
+}
+#cadre2 {
+    border: none;
+    width : 100%;
+    display: inline-block;
+    text-align: center;
+}
+
+#cadre3 {
+    border: none;
+    width : 100%;
+    display: inline-block;
+    
+}
+#cadre4 {
+    border: none;
+    width : 100%;
+    display: inline-block;
+    text-align: center;
+    
+}
+#cadre5 {
+    border: none;
+    width : 100%;
+    display: inline-block;
+       text-align: center;
+}
+
+#font_pied {
+    border-bottom-right-radius: 24px;
+    border-bottom-left-radius: 24px;
+    width: 100%;
+    border-top: 1px solid white;
+    background-color: darkslategrey;
+    display: inline-block;
+    height: 248px;
+    }
+#linkedin {
+        bottom: 10%;
+        right: 5%;
+    }
+#twitter {
+        bottom: 10%;
+        right: 20%;
+    }
+
+#img1 {
+        width: 100%;
+    }
+#img2 {
+        width: 100%;
+    }
+#img3 {
+        width: 100%;
+    }
+#img4 {
+        width: 100%;
+    }
+}
+
+h1 {
+    text-align: center;
+    font-size: 30px;
+}
+#inf, #lang2, #comm {
+    border: none;
+    margin: 5px;
+    padding: 10px;
+    width: 300px;
+    height: 100%;
+    display: inline-block;
+    text-align: center;
+}
