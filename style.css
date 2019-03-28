@@ -115,6 +115,7 @@ nav ul li:hover {
 
 #description {
     padding: 0 20% 0 20%;
+    line-height: 1.5;
 }
 
 article ul {
@@ -127,20 +128,20 @@ article ul {
 #cadre_experience li:first-child {
     margin: 15px 0 25px 0;
 }
+
 hr {
     margin: 7% 15% 7% 15%;
     width: 70%;
     color: lightslategrey;
 }
 
-#cadre_about li,
+
 #cadre_experience li:not(:first-child),
 #cadre_competence li,
 #cadre_diplome li,
 #cadre_interet li {
-    margin: 7px 0 7px 0;
+    margin: 10px 0 10px 0;
 }
-
 
 h1 {
     text-align: center;
@@ -155,7 +156,7 @@ h1 {
 }
 
 #competences h2 {
-    margin: 0 10% 0 10%;
+    margin: 0 10% 5% 10%;
 }
 
 #comp1 {
@@ -193,7 +194,7 @@ h2:not(#competences h2) {
 }
 
 .certif {
-
+    margin: 10% 0 10% 0;
     width: 19%;
 
 }
