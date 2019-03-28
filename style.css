@@ -97,8 +97,8 @@
                         #reseaux_sociaux {
 
                             position: absolute;
-                            right: 5%;
-                            bottom: 0;
+                            right: 2%;
+                            bottom: 5%;
                         }
 
                         /* mise en page des cadres de la page */
@@ -113,6 +113,10 @@
 
                         }
 
+                        #description {
+                            padding: 0 20% 0 20%;
+                        }
+
                         article ul {
                             /* liste d'expériences */
                             list-style-type: none;
@@ -120,11 +124,6 @@
                             /* centrage des titres de listes*/
                         }
 
-                        #description,
-                        article li : not(#comp1, #comp2) {
-                            padding: 0 15% 0 15%;
-                            /* centrage des listes*/
-                        }
 
 
                         h1 {
