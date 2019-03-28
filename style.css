@@ -1,148 +1,209 @@
-@media screen and (max-width: 1920px) {
-  .bloc {
-    /*display:block;
-    clear:both; */
-    
-  }
-        #menu, #informatique, #commun, #certifications, #hobby, #description, #experiences, #diplomes, #menu_foot .flex_menu, #centre, #lang {
-        list-style-type: none;
-}
+                        /* couleur du body */
+                        #font {
+                            background-color: cadetblue;
+                            margin: 0;
+                        }
 
-.bloc {
-    background-color:white;
-    width: 80%;
-    margin: auto;
-    padding-top: 95px;
-    border-bottom-right-radius: 24px;
-    border-bottom-left-radius: 24px;
-    border: 2px solid white;
-    box-shadow: -8px -8px 10px #584 ;
-    font-family: serif, cursive, sans-serif;
-    position: relative;
-}
+                        /* bloc de contenu de page */
+                        .bloc {
+                            list-style-type: none;
+                            background-color: white;
+                            margin-top: 186px;
+                            margin-left: 10%;
+                            margin-right: 10%;
+                            border: 2px solid white;
+                            max-width: 100%;
+                            border-bottom-right-radius: 24px;
+                            border-bottom-left-radius: 24px;
+                            font-family: serif, cursive, sans-serif;
+                            z-index: 2;
+                            /* second plan */
+                        }
 
-#font {    
-background-color: cadetblue;
+                        /* centrage de tout le contenu */
 
-}
 
-#fond_banniere {
-        width: 100%;        
-    }
-    
-#menu_bas {
-  list-style-type: none;
-  margin: 10;
-  padding: 10;
-  background-color: darkslategrey;
-  bottom: 9;
-  width: 100%;
-    }
-    
-#menu_haut {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  background-color: darkslategrey;
-  position: fixed;
-  display: flex;
-  top: 0;
-  width: 100%;
-    }
-nav > ul > li {
-      float:left;
-      text-decoration: none; color: white;
-    position: relative;
-     display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
+                        /* mise en page des menus haut et bas */
+                        #menu_haut {
+                            list-style-type: none;
+                            margin: 0;
+                            padding: 30px 0 30px 0;
+                            background-color: darkslategrey;
+                            position: fixed;
+                            display: flex;
+                            top: 0px;
+                            width: 100%;
+                            z-index: 3;
+                            /* premier plan */
+                        }
 
-nav >ul >li:hover {
-  background-color: #111;
-}
-  
-#name {
-    text-align: center;
-}
+                        .menu li {
+                            padding: 10px;
+                            width: auto;
+                            display: inline-block;
+                            font-family: Stencil Std, fantasy;
+                            z-index: 5;
 
-#cadre1 {
-    border: none;
-    width : 100%;
-    display: inline-block;
-    text-align: center;
-}
-#cadre2 {
-    border: none;
-    width : 100%;
-    display: inline-block;
-    text-align: center;
-}
+                        }
 
-#cadre3 {
-    border: none;
-    width : 100%;
-    display: inline-block;
-    
-}
-#cadre4 {
-    border: none;
-    width : 100%;
-    display: inline-block;
-    text-align: center;
-    
-}
-#cadre5 {
-    border: none;
-    width : 100%;
-    display: inline-block;
-       text-align: center;
-}
+                        nav a {
+                            color: white;
+                            text-decoration: none;
+                        }
 
-#font_pied {
-    border-bottom-right-radius: 24px;
-    border-bottom-left-radius: 24px;
-    width: 100%;
-    border-top: 1px solid white;
-    background-color: darkslategrey;
-    display: inline-block;
-    height: 248px;
-    }
-#linkedin {
-        bottom: 10%;
-        right: 5%;
-    }
-#twitter {
-        bottom: 10%;
-        right: 20%;
-    }
+                        .menu {
+                            margin: auto;
+                        }
 
-#img1 {
-        width: 100%;
-    }
-#img2 {
-        width: 100%;
-    }
-#img3 {
-        width: 100%;
-    }
-#img4 {
-        width: 100%;
-    }
-}
+                        .logo {
+                            position: absolute;
+                            height: 100px;
+                            left: 20px;
+                            top: 0;
+                        }
 
-h1 {
-    text-align: center;
-    font-size: 30px;
-}
-#inf, #lang2, #comm {
-    border: none;
-    margin: 5px;
-    padding: 10px;
-    width: 300px;
-    height: 100%;
-    display: inline-block;
-    text-align: center;
-}
+                        nav ul li:hover {
+                            background-color: #155;
+                        }
+
+                        #menu_bas {
+                            list-style-type: none;
+                            margin: auto;
+                            padding: 10px;
+                            background-color: darkslategrey;
+                            /**/
+                        }
+
+                        #menu_bas li {
+                            padding: 5px;
+                            text-decoration: none;
+                            text-emphasis-color: white;
+                            display: inline-block;
+                            font-family: Stencil Std, fantasy;
+
+                        }
+
+                        #font_pied {
+                            border-bottom-right-radius: 24px;
+                            border-bottom-left-radius: 24px;
+                            width: 100%;
+                            border-top: 1px solid white;
+                            background-color: darkslategrey;
+                            display: inline-block;
+                            height: 248px;
+                            position: relative;
+                        }
+
+                        #reseaux_sociaux {
+
+                            position: absolute;
+                            right: 5%;
+                            bottom: 0;
+                        }
+
+                        /* mise en page des cadres de la page */
+
+                        #cadre1,
+                        #cadre2,
+                        #cadre3,
+                        #cadre4,
+                        #cadre5 {
+                            border: none;
+                            width: 100%;
+
+                        }
+
+                        article ul {
+                            /* liste d'expériences */
+                            list-style-type: none;
+                            padding: 0 20% 0 20%;
+                            /* centrage des titres de listes*/
+                        }
+
+                        #description,
+                        article li : not(#comp1, #comp2) {
+                            padding: 0 15% 0 15%;
+                            /* centrage des listes*/
+                        }
+
+
+                        h1 {
+                            text-align: center;
+                            font-size: 30px;
+                        }
+
+                        #competences {
+                            /* aligner les competences */
+                            display: flex;
+                            margin: auto;
+                            border: none;
+                        }
+
+                        #competences h2 {
+                            margin: 0 10% 0 10%;
+                        }
+
+                        #comp1 {
+                            width: 100%;
+                            padding: 0 0% 0 10%;
+                        }
+
+                        #comp2 {
+
+                            width: 70%;
+                            padding: 0 10% 0 0%;
+
+                        }
+
+                        .progress {
+                            margin: 0 0 0 10%;
+                        }
+
+                        h2:not(#competences h2) {
+                            text-align: center;
+                            margin: 0;
+                            padding: 0;
+                        }
+
+                        /* reglages des images */
+
+                        #fond_banniere {
+                            width: 100%;
+                        }
+
+                        #certificat {
+                            margin-left: 7%;
+                            margin-right: 5%;
+                            padding: 0;
+                        }
+
+                        .certif {
+
+                            width: 19%;
+
+                        }
+
+                        #img4,
+                        #img3 {
+                            width: 50%;
+                        }
+                        }
+
+                        .btn {
+                            text-decoration: none;
+                            padding: 10px;
+                            font-family: arial;
+                            font-size: 1em;
+                            color: #FFFFFF;
+                            background-color: #31859b;
+                            border-radius: 24px;
+                            border: 2px solid #d7d7d7;
+                            box-shadow: 5px 3px 9px #205867;
+                        }
+
+
+                        .btn:hover {
+                            padding: 10px;
+                            border: 2px solid #00b050;
+                            box-shadow: 1px 1px 4px #00b050;
+                        }
