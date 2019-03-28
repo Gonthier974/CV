@@ -188,13 +188,15 @@ h2:not(#competences h2) {
 }
 
 #certificat {
-    margin-left: 7%;
-    margin-right: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
     padding: 0;
+    display: inline-block;
 }
 
 .certif {
-    margin: 10% 0 10% 0;
+    margin: 0;
+    padding: 0;
     width: 19%;
 
 }
