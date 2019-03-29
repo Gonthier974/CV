@@ -135,7 +135,7 @@ section ul {
 
 /* interligne des sous titres */
 #cadre_experience li:first-child {
-    margin: 15px 0 25px 0;
+    margin: 30px 0 25px 0;
 }
 
 hr {
@@ -224,6 +224,7 @@ section > article > div > ul > li, p {
 
 #comp1, #comp2 {
     font-size: 20px;
+    text-align: center;
 }
 #legende {
     font-size: 18px;
