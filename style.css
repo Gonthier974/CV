@@ -4,30 +4,35 @@
     margin: 0;
 }
 
-/* bloc de contenu de page */
-.bloc {
-    list-style-type: none;
-    background-color: white;
+/* création d'un bloc principal pour tout contenu de la page */
+#bloc {
+    background-color: #fff;
     margin-top: 186px;
     margin-left: 10%;
     margin-right: 10%;
-    border: 2px solid white;
+    border: 2px solid #fff;
     max-width: 100%;
     border-bottom-right-radius: 24px;
     border-bottom-left-radius: 24px;
-    font-family: serif, cursive, sans-serif;
+    font-family: arial;
     z-index: 2;
     /* second plan */
 }
-
-/* centrage de tout le contenu */
-
-
-/* mise en page des menus haut et bas */
-#menu_haut {
+/* suppression de toutes les puces de listes*/
+#bloc li {
     list-style-type: none;
-    margin: 0;
-    padding: 30px 0 30px 0;
+}
+
+/*positionnement du logo*/
+.logo {
+    position: relative;
+    height: 100px;
+    left: 20px;
+    top: 0;
+}
+
+/* création du menu du haut */
+#menu_haut {
     background-color: darkslategrey;
     position: fixed;
     display: flex;
@@ -37,68 +42,73 @@
     /* premier plan */
 }
 
-.menu li {
-    padding: 10px;
+/*Design des boutons menu*/
+.btn {
+    text-decoration: none;
+    padding: 5px;
+    font-family: arial;
+    font-size: 18px;
+    color: #FFFFFF;
+    background-color: #055;
+    border-radius: 24px;
+    border: 1px solid #d7d7d7;
+    box-shadow: 5px 3px 9px #205867;
     width: auto;
     display: inline-block;
-    font-family: Stencil Std, fantasy;
-    z-index: 5;
-
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-}
-
-.menu {
-    margin: auto;
-}
-
-.logo {
-    position: absolute;
-    height: 100px;
-    left: 20px;
-    top: 0;
-}
-
-nav ul li:hover {
+.btn:hover {
     background-color: #155;
+    padding: 7px;
+    border: 3px solid #00b050;
+    box-shadow: 1px 1px 4px #00b050;
 }
 
-#menu_bas {
-    list-style-type: none;
-    margin: auto;
-    padding: 10px;
-    background-color: darkslategrey;
-    /**/
-}
-
-#menu_bas li {
-    padding: 5px;
-    text-decoration: none;
-    text-emphasis-color: white;
-    display: inline-block;
-    font-family: Stencil Std, fantasy;
-
-}
-
-#font_pied {
+/*création menu du bas*/
+footer {
     border-bottom-right-radius: 24px;
     border-bottom-left-radius: 24px;
     width: 100%;
     border-top: 1px solid white;
     background-color: darkslategrey;
-    display: inline-block;
-    height: 248px;
+    height: 400px;
     position: relative;
 }
 
-#reseaux_sociaux {
+#menu_bas li {
+    margin: 40px 0 20px 0;
+}
 
+footer a {
+    text-decoration: none;
+    padding: 0;
+    font-family: arial;
+    font-size: 20px;
+    width: auto;
+}
+
+footer a:hover {
+    background-color: #155;
+    padding: 10px;
+    border: 2px solid #00b050;
+    box-shadow: 1px 1px 4px #00b050;
+}
+
+/*modification contact*/
+#reseaux_sociaux {
     position: absolute;
-    right: 2%;
-    bottom: 5%;
+    right: 10%;
+    bottom: 40%;
+}
+
+/* modifications des menu */
+nav a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+div nav ul {
+    margin: auto;
 }
 
 /* mise en page des cadres de la page */
@@ -118,13 +128,12 @@ nav ul li:hover {
     line-height: 1.5;
 }
 
-article ul {
-    /* liste d'expériences */
-    list-style-type: none;
+/*centrage des texte */
+section ul {
     padding: 0 20% 0 20%;
-    /* centrage des titres de listes*/
 }
 
+/* interligne des sous titres */
 #cadre_experience li:first-child {
     margin: 15px 0 25px 0;
 }
@@ -140,12 +149,7 @@ hr {
 #cadre_competence li,
 #cadre_diplome li,
 #cadre_interet li {
-    margin: 10px 0 10px 0;
-}
-
-h1 {
-    text-align: center;
-    font-size: 30px;
+    margin: 14px 0 14px 0;
 }
 
 #competences {
@@ -155,31 +159,11 @@ h1 {
     border: none;
 }
 
-#competences h2 {
-    margin: 0 10% 5% 10%;
-}
-
-#comp1 {
-    width: 100%;
-    padding: 0 0% 0 10%;
-}
-
-#comp2 {
-
-    width: 70%;
-    padding: 0 10% 0 0%;
-
-}
-
-.progress {
-    margin: 0 0 0 10%;
-}
-
-h2:not(#competences h2) {
-    text-align: center;
-    margin: 0;
+#comp1, #comp2{
+    width: 50%;
     padding: 0;
 }
+
 
 /* reglages des images */
 
@@ -187,9 +171,12 @@ h2:not(#competences h2) {
     width: 100%;
 }
 
+.progress {
+    margin: 0 0 0 10%;
+}
+
 #certificat {
     margin-left: 3%;
-    margin-right: 3%;
     padding: 0;
     display: inline-block;
 }
@@ -198,7 +185,6 @@ h2:not(#competences h2) {
     margin: 0;
     padding: 0;
     width: 19%;
-
 }
 
 #img4,
@@ -206,23 +192,39 @@ h2:not(#competences h2) {
     width: 50%;
     margin: 8% 0 0 0;
 }
+
+.legende_inf,
+.legende_sup {
+    width: 40%;
+    display: inline-block;
+    text-align: center;
 }
 
-.btn {
-    text-decoration: none;
-    padding: 10px;
-    font-family: arial;
-    font-size: 1em;
-    color: #FFFFFF;
-    background-color: #31859b;
-    border-radius: 24px;
-    border: 2px solid #d7d7d7;
-    box-shadow: 5px 3px 9px #205867;
+/*modification police*/
+h1 {
+    text-align: center;
+    font-size: 50px;
 }
 
+h2 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+}
 
-.btn:hover {
-    padding: 10px;
-    border: 2px solid #00b050;
-    box-shadow: 1px 1px 4px #00b050;
+section > article > div > ul > li, p {
+    font-size: 20px;
+    text-align: justify;
+}
+
+#reseaux_sociaux h1 {
+    font-size: 40px;
+}
+
+#comp1, #comp2 {
+    font-size: 20px;
+}
+#legende {
+    font-size: 18px;
 }
