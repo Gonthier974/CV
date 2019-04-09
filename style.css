@@ -1,231 +1,34 @@
-/* couleur du body */
-#font {
+#logo {
+    width: 70px;
+    margin: 0;
+    padding: 0;
+}
+
+body {
     background-color: cadetblue;
     margin: 0;
 }
 
-/* création d'un bloc principal pour tout contenu de la page */
-#bloc {
-    background-color: #fff;
-    margin-top: 186px;
-    margin-left: 10%;
-    margin-right: 10%;
-    border: 2px solid #fff;
-    max-width: 100%;
-    border-bottom-right-radius: 24px;
-    border-bottom-left-radius: 24px;
-    font-family: arial;
-    z-index: 2;
-    /* second plan */
+ul li::first-letter {
+  text-transform: uppercase;
 }
-/* suppression de toutes les puces de listes*/
-#bloc li {
-    list-style-type: none;
+ul li {
+    margin: 10px 0 0 0;
+}
+section {
+    margin: 20px 0 20px 0;
 }
 
-/*positionnement du logo*/
-.logo {
-    position: relative;
-    height: 100px;
-    left: 20px;
-    top: 0;
-}
-
-/* création du menu du haut */
-#menu_haut {
-    background-color: darkslategrey;
-    position: fixed;
-    display: flex;
-    top: 0px;
-    width: 100%;
-    z-index: 3;
-    /* premier plan */
-}
-
-/*Design des boutons menu*/
-.btn {
-    text-decoration: none;
-    padding: 5px;
-    font-family: arial;
-    font-size: 18px;
-    color: #FFFFFF;
-    background-color: #055;
-    border-radius: 24px;
-    border: 1px solid #d7d7d7;
-    box-shadow: 5px 3px 9px #205867;
-    width: auto;
-    display: inline-block;
-}
-
-.btn:hover {
-    background-color: #155;
-    padding: 7px;
-    border: 3px solid #00b050;
-    box-shadow: 1px 1px 4px #00b050;
-}
-
-/*création menu du bas*/
-footer {
-    border-bottom-right-radius: 24px;
-    border-bottom-left-radius: 24px;
-    width: 100%;
-    border-top: 1px solid white;
-    background-color: darkslategrey;
-    height: 400px;
-    position: relative;
-}
-
-#menu_bas li {
-    margin: 40px 0 20px 0;
-}
-
-footer a {
-    text-decoration: none;
-    padding: 0;
-    font-family: arial;
-    font-size: 20px;
-    width: auto;
-}
-
-footer a:hover {
-    background-color: #155;
-    padding: 10px;
-    border: 2px solid #00b050;
-    box-shadow: 1px 1px 4px #00b050;
-}
-
-/*modification contact*/
-#reseaux_sociaux {
-    position: absolute;
-    right: 10%;
-    bottom: 40%;
-}
-
-/* modifications des menu */
-nav a {
-    color: #ccc;
-    text-decoration: none;
-}
-
-div nav ul {
-    margin: auto;
-}
-
-/* mise en page des cadres de la page */
-
-#cadre_about,
-#cadre_experience,
-#cadre_competence,
-#cadre_diplome,
-#cadre_interet {
-    border: none;
-    width: 100%;
-
-}
-
-#description {
-    padding: 0 20% 0 20%;
-    line-height: 1.5;
-}
-
-/*centrage des texte */
-section ul {
-    padding: 0 20% 0 20%;
-}
-
-/* interligne des sous titres */
-#cadre_experience li:first-child {
-    margin: 30px 0 25px 0;
-}
-
-hr {
-    margin: 7% 15% 7% 15%;
-    width: 70%;
-    color: lightslategrey;
-}
-
-
-#cadre_experience li:not(:first-child),
-#cadre_competence li,
-#cadre_diplome li,
-#cadre_interet li {
-    margin: 14px 0 14px 0;
-}
-
-#competences {
-    /* aligner les competences */
-    display: flex;
-    margin: auto;
-    border: none;
-}
-
-#comp1, #comp2{
-    width: 50%;
-    padding: 0;
-}
-
-
-/* reglages des images */
-
-#fond_banniere {
-    width: 100%;
-}
-
-.progress {
-    margin: 0 0 0 10%;
-}
-
-#certificat {
-    margin-left: 3%;
-    padding: 0;
-    display: inline-block;
-}
-
-.certif {
-    margin: 0;
-    padding: 0;
-    width: 19%;
-}
-
-#img4,
-#img3 {
-    width: 50%;
-    margin: 8% 0 0 0;
-}
-
-.legende_inf,
-.legende_sup {
-    width: 40%;
-    display: inline-block;
-    text-align: center;
-}
-
-/*modification police*/
 h1 {
     text-align: center;
-    font-size: 50px;
+    margin: 0 0 40px 0;
+}
+header {
+    margin-top: 100px;
+}
+.img {
+    width: 100%; 
+    margin: 40px 0 0 0;
 }
 
-h2 {
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    font-size: 30px;
-}
 
-section > article > div > ul > li, p {
-    font-size: 20px;
-    text-align: justify;
-}
-
-#reseaux_sociaux h1 {
-    font-size: 40px;
-}
-
-#comp1, #comp2 {
-    font-size: 20px;
-    text-align: center;
-}
-#legende {
-    font-size: 18px;
-}
