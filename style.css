@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: cadetblue;
+    background-color: #83C5BE;
     margin: 0;
 }
 
@@ -32,6 +32,6 @@ header {
     margin: 40px 0 0 0;
 }
 hr {
-    color: cadetblue;
+    color: #83C5BE;
 }
 
