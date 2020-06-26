@@ -3181,9 +3181,8 @@ input[type="button"].btn-block {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #83C5BE;
+  background-color: #CAE9FF;
   background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem; }
   .card > hr {
     margin-right: 0;
@@ -3255,10 +3254,10 @@ input[type="button"].btn-block {
   border-radius: calc(0.25rem - 1px); }
 
 .card-img-top {
-  width: 70%;
+  width: 60%;
   border-top-left-radius: calc(0.25rem - 1px);
   border-top-right-radius: calc(0.25rem - 1px); 
-  margin: 0 15% 0 15%;
+  margin: 0 20% 0 20%;
 }
 
 .card-img-bottom {
@@ -3674,7 +3673,7 @@ input[type="button"].btn-block {
   height: 1rem;
   overflow: hidden;
   font-size: 0.75rem;
-  background-color: #e9ecef;
+  background-color: #b3b6b8;
   border-radius: 0.25rem; }
 
 .progress-bar {
@@ -3684,7 +3683,7 @@ input[type="button"].btn-block {
   color: #fff;
   text-align: center;
   white-space: nowrap;
-  background-color: cadetblue;
+  background-color: #1B4965;
   transition: width 0.6s ease; }
   @media (prefers-reduced-motion: reduce) {
     .progress-bar {
@@ -4558,7 +4557,7 @@ button.bg-primary:focus {
   background-color: #4c7e80 !important; }
 
 .bg-secondary {
-  background-color: #006D77 !important; }
+  background-color: #1B4965 !important; }
 
 a.bg-secondary:hover, a.bg-secondary:focus,
 button.bg-secondary:hover,
@@ -4574,7 +4573,7 @@ button.bg-success:focus {
   background-color: #c8d9d9 !important; }
 
 .bg-info {
-  background-color: #FFDDD2 !important; }
+  background-color: #5FA8D3 !important; }
 
 a.bg-info:hover, a.bg-info:focus,
 button.bg-info:hover,
